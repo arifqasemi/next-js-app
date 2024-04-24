@@ -1,4 +1,3 @@
-import POST from "@/assets/models/post";
 import { NextResponse } from "next/server";
 
 

@@ -1,10 +1,9 @@
 {
+  "/page": "app/page.js",
   "/home/page": "app/home/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/posts/route": "app/api/posts/route.js",
   "/blog/[postId]/page": "app/blog/[postId]/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/api/comments/route": "app/api/comments/route.js",
   "/api/detail/[postId]/route": "app/api/detail/[postId]/route.js",
-  "/post/[catId]/page": "app/post/[catId]/page.js",
-  "/api/category/route": "app/api/category/route.js"
+  "/api/posts/route": "app/api/posts/route.js"
 }
