@@ -1,0 +1,27 @@
+{
+  "pages": {
+    "/home/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-node_modules_swiper_modules_pagination_css-node_modules_swiper_swiper_css.css",
+      "static/chunks/app/home/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-node_modules_bootstrap_dist_css_bootstrap_min_css.css",
+      "static/css/css-app_globals_css-node_modules_next_font_google_target_css.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/blog/[postId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blog/[postId]/page.js"
+    ],
+    "/post/[catId]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/post/[catId]/page.js"
+    ]
+  }
+}
