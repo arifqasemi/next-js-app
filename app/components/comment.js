@@ -62,7 +62,7 @@ function Comment({postId}) {
                 </div>
                 <div className="col-12">
                 <div className="form-floating mb-3">
-                      <textarea className="form-control" placeholder="Leave a comment here" name='comment' id="floatingTextarea" onChange={(e)=> setComment(e.target.value)} defaultValue={comment}></textarea>
+                      <textarea className="form-control" placeholder="Leave a comment here" name='comment' id="floatingTextarea" onChange={(e)=> setComment(e.target.value)} value={comment}></textarea>
                       <label htmlFor="floatingTextarea">Comments</label>
                     </div>
                 </div>
