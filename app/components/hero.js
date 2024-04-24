@@ -26,7 +26,7 @@ function Hero() {
         const data = await response.json();
         setPostData(data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching data for the slider:', error);
       }
     };
     
