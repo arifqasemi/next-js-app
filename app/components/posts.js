@@ -10,7 +10,7 @@ function Post() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/posts');
+        const response = await fetch('https://next-js-app-six-theta.vercel.app/api/posts');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
