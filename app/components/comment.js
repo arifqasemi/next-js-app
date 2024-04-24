@@ -15,7 +15,7 @@ function Comment({postId}) {
           return
         }
         try {
-          const response = await fetch('http://localhost:3000/api/comments',{
+          const response = await fetch('https://next-js-app-six-theta.vercel.app/api/comments',{
             method:"POST",
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify({name:author,comment:comment,postId:postId})
