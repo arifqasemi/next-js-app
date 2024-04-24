@@ -3,7 +3,22 @@ import React, { useState } from 'react'
 function Comment({postId}) {
     const [author,setAuthor] = useState('')
   const [comment,setComment] = useState('')
-
+    
+  const fetchData = async () => {
+    try {
+      const response = await fetch(`http://localhost:3000/api/comments?postId=${postId}`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      const data = await response.json();
+      setCommentData(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setError('Error fetching data. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
 
     const submitHandler = async()=>{
         if(author ===""){
@@ -31,6 +46,7 @@ function Comment({postId}) {
     
         setAuthor('')
         setComment('')
+        fetchData()
       }
   return (
     <>
